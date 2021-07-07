@@ -1,8 +1,8 @@
-#include "gtest/gtest.h"
+ï»¿#include "gtest/gtest.h"
 #include <functional>
 using namespace std;
 
-typedef function<int(int, int)> Function;		//ÇÔ¼ö ½Ã±×´ÏÃ³´Â int(int, int) ´Ù
+typedef function<int(int, int)> Function;		//í•¨ìˆ˜ ì‹œê·¸ë‹ˆì²˜ëŠ” int(int, int) ë‹¤
 
 auto add = [](int x, int y) ->int
 {
@@ -27,13 +27,13 @@ auto divi = [](int x, int y) -> int
 		return 0;
 };
 
-TEST(±âº»±â, ´ÜÀ§Å×½ºÆ®»ç¿ëÇØº¸±â)
+TEST(ê¸°ë³¸ê¸°, ë‹¨ìœ„í…ŒìŠ¤íŠ¸ëª¨ë“ˆì‚¬ìš©í•´ë³´ê¸°)
 {
-	EXPECT_EQ(10, 10);		//ÀÏÄ¡ÇÏ¹Ç·Î ¼º°ø
-	EXPECT_EQ(20, 10);		//ºÒÀÏÄ¡ ÇÏ¹Ç·Î ½ÇÆĞ
+	EXPECT_EQ(10, 10);		//ì¼ì¹˜í•˜ë¯€ë¡œ ì„±ê³µ
+	EXPECT_EQ(20, 10);		//ë¶ˆì¼ì¹˜ í•˜ë¯€ë¡œ ì‹¤íŒ¨
 }
 
-TEST(±âº»±â, ÇÔ¼ö½Ã±×´ÏÃ³¿¬½ÀÇØº¸±â¤¾¤µ¤¾) {
+TEST(ê¸°ë³¸ê¸°, í•¨ìˆ˜ì‹œê·¸ë‹ˆì²˜ì—°ìŠµí•´ë³´ê¸°ã…ã……ã…) {
 	Function fShape;
 
 	fShape = add;
